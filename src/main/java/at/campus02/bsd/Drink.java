@@ -1,4 +1,11 @@
-package at.fhj.iit;
+/*
+ * Drink
+ * Represents Drink
+ * Author: Daniel Hubmann, Caroline Meixner
+ * Last Change: 22.06.2023
+ */
+
+package at.campus02.bsd;
 
 /**
  * Abstract base class for concrete drink classes
