@@ -17,8 +17,8 @@ As the project is being developed as part of the course "Configuration Managemen
 
 ## Task list
 
-- [ ] Create README.md
-- [ ] Create maven project and integrate provided files
+- [x] Create README.md
+- [x] Create maven project and integrate provided files
 - [ ] Configure pom.xml (add developer information, URL of repository)
 - [ ] Fix bugs in provided files
 - [ ] Create and implement Cocktail class
