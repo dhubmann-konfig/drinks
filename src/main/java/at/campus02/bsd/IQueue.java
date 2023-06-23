@@ -7,36 +7,60 @@
 
 package at.campus02.bsd;
 
-// fastly written (not really nice) comments you should adapt
+/**
+ * The IQueue interface represents the functionality of a queue data structure.
+ * 
+ * It contains signatures for methods to add, remove and return the first
+ * element (in the front) of the queue.
+ * 
+ * @author Daniel Hubmann
+ *
+ */
 public interface IQueue {
 	/**
-	 * I am a really bad comment
+	 * Adds object to queue and returns true if successful
 	 * 
-	 * fasdfadsffdsadsf
-	 * 
-	 * fdsasdfadsf
-	 * 
-	 * add object to queue, true if okay
-	 * 
-	 * i fell asleep on my keyboard...
-	 * 
+	 * @author Daniel Hubmann
+	 * @param String object to add
+	 * @return true if successful, false otherwise
 	 */
 	public abstract boolean offer(String obj);
 
-	// returns + del 1st element; null if nothing in there
-	//
+	/**
+	 * Returns and deletes the first element.
+	 * 
+	 * @author Daniel Hubmann
+	 * @return String object at the front of the queue
+	 */
 	public abstract String poll();
 
-	/*
-	 * same as poll, if there is nothing in there error NoSuchElementException
+	/**
+	 * Returns and deletes the first element. If queue is empty a
+	 * NoSuchElementException should be thrown.
+	 * 
+	 * @author Daniel Hubmann
+	 * @return String object at the front of the queue
+	 * @throws NoSuchElementException if queue is empty (depending on
+	 *                                implementation)
 	 */
 	public abstract String remove();
 
-	// 1st element without dlete, otherwise null
-
+	/**
+	 * Returns the first element.
+	 * 
+	 * @author Daniel Hubmann
+	 * @return String object at the front of the queue
+	 */
 	public abstract String peek();
 
-	// element is to peek what remove is to poll
-
+	/**
+	 * Returns the first element. If queue is empty a NoSuchElementException should
+	 * be thrown.
+	 * 
+	 * @author Daniel Hubmann
+	 * @return String object at the front of the queue
+	 * @throws NoSuchElementException if queue is empty (depending on
+	 *                                implementation)
+	 */
 	public abstract String element();
 }
