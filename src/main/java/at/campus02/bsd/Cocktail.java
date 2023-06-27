@@ -7,14 +7,22 @@
 
 package at.campus02.bsd;
 
+import java.util.List;
+
 public class Cocktail extends Drink{
+    /**
+     * list of contained liquids
+     */
+    protected List<Liquid> liquidList;
+
     /**
      * Creates a Drink object with given name
      *
      * @param name name of the drink
      */
-    public Cocktail(String name) {
+    public Cocktail(String name, List<Liquid> liquidList) {
         super(name);
+        this.liquidList = liquidList;
     }
 
     /**
@@ -24,7 +32,11 @@ public class Cocktail extends Drink{
      */
     @Override
     public double getVolume() {
-        return 0;
+        double volume = 0;
+        for (Liquid liquid : liquidList) {
+            volume += liquid.getVolume();
+        }
+        return volume;
     }
 
     /**
@@ -34,7 +46,13 @@ public class Cocktail extends Drink{
      */
     @Override
     public double getAlcoholPercent() {
-        return 0;
+        double alcoholPercent = 0;
+        double alcoholVolume = 0;
+        for (Liquid liquid : liquidList) {
+            alcoholVolume += liquid.getAlcoholPercent() * liquid.getVolume();
+        }
+        alcoholPercent = alcoholVolume / getVolume();
+        return alcoholPercent;
     }
 
     /**
@@ -44,6 +62,13 @@ public class Cocktail extends Drink{
      */
     @Override
     public boolean isAlcoholic() {
-        return false;
+        boolean alcoholic = false;
+        for (Liquid liquid : liquidList) {
+            if (liquid.getAlcoholPercent() != 0) {
+                alcoholic = true;
+                break;
+            }
+        }
+        return alcoholic;
     }
 }
