@@ -6,12 +6,24 @@
 	<groupId>org.example</groupId>
 	<artifactId>Drinks</artifactId>
 	<version>1.0-SNAPSHOT</version>
+	<url>https://github.com/dhubmann-konfig/drinks.git</url>
 	<name>Drinks</name>
 	<developers>
 		<developer>
 			<id>danielhubmann</id>
 			<name>Daniel Hubmann</name>
 			<email>01130491@edu.campus02.at</email>
+			<organization>FH CAMPUS 02</organization>
+			<organizationUrl>https://www.campus02.at/startseite-2/?gclid=Cj0KCQjwr82iBhCuARIsAO0EAZxMFmr6GcoSJJl8lf2m8T030jdxCOGIonfv6BsKsfyZv1zeDw-MIfgaAqulEALw_wcB</organizationUrl>
+			<roles>
+				<role>Student</role>
+			</roles>
+			<timezone>Europe/Vienna</timezone>
+		</developer>
+		<developer>
+			<id>carolinemeixner</id>
+			<name>Caroline Meixner</name>
+			<email>01610205@edu.campus02.at</email>
 			<organization>FH CAMPUS 02</organization>
 			<organizationUrl>https://www.campus02.at/startseite-2/?gclid=Cj0KCQjwr82iBhCuARIsAO0EAZxMFmr6GcoSJJl8lf2m8T030jdxCOGIonfv6BsKsfyZv1zeDw-MIfgaAqulEALw_wcB</organizationUrl>
 			<roles>
