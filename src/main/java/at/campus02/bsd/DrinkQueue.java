@@ -17,7 +17,7 @@ import java.util.NoSuchElementException;
  * It contains methods to add, remove and return the first element (in the
  * front) of the queue.
  * 
- * @author Daniel Hubmann
+ * @author Daniel Hubmann, Caroline Meixner
  *
  */
 public class DrinkQueue {
@@ -82,9 +82,10 @@ public class DrinkQueue {
 	}
 
 	/**
-	 * 
-	 * @author
-	 * @return
+	 * Returns first element in front of the queue.
+	 *
+	 * @author Caroline Meixner
+	 * @return first element in queue, null if empty
 	 */
 	public Drink peek() {
 		if (drinks.get(0) != null) {
@@ -94,9 +95,11 @@ public class DrinkQueue {
 	}
 
 	/**
-	 * 
-	 * @author
-	 * @return
+	 * Return first element in front of the queue.
+	 *
+	 * @author Caroline Meixner
+	 * @return first element in queue
+	 * @throws NoSuchElementException if queue is empty
 	 */
 	public Drink element() {
 		Drink drink = peek();
