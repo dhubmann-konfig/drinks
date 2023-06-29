@@ -19,8 +19,8 @@ As the project is being developed as part of the course "Configuration Managemen
 
 - [x] Create README.md
 - [x] Create maven project and integrate provided files
-- [ ] Configure pom.xml (add developer information, URL of repository)
-- [ ] Fix bugs in provided files
+- [x] Configure pom.xml (add developer information, URL of repository)
+- [x] Fix bugs in provided files
 - [ ] Create and implement Cocktail class
 - [ ] Create and implement DrinkQueue class
 - [ ] Write JavaDocs for each class (class, attributes, methods)
