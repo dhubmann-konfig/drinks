@@ -23,6 +23,6 @@ As the project is being developed as part of the course "Configuration Managemen
 - [x] Fix bugs in provided files
 - [x] Create and implement Cocktail class
 - [x] Create and implement DrinkQueue class
-- [ ] Write JavaDocs for each class (class, attributes, methods)
+- [x] Write JavaDocs for each class (class, attributes, methods)
 - [ ] Write Tests for each class
 - [ ] Create maven site documentation
