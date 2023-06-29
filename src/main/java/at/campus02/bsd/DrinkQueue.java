@@ -2,7 +2,7 @@
  * DrinkQueue
  * Represents Queue of Drinks
  * Author: Daniel Hubmann, Caroline Meixner
- * Last Change: 24.06.2023
+ * Last Change: 29.06.2023
  */
 
 package at.campus02.bsd;
@@ -87,7 +87,9 @@ public class DrinkQueue {
 	 * @return
 	 */
 	public Drink peek() {
-		// TODO Auto-generated method stub
+		if (drinks.get(0) != null) {
+			return drinks.get(0);
+		}
 		return null;
 	}
 
@@ -97,8 +99,11 @@ public class DrinkQueue {
 	 * @return
 	 */
 	public Drink element() {
-		// TODO Auto-generated method stub
-		return null;
+		Drink drink = peek();
+		if (drink == null) {
+			throw new NoSuchElementException("there's no element any more");
+		}
+		return drink;
 	}
 
 }
