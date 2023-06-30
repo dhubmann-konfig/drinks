@@ -8,3 +8,4 @@
 - Fixed bugs in StringQueue.java
 - Added javadoc to IQueue & StringQueue class
 - Added implementation of offer(), poll() & remove() methods in DrinkQueue class
+- Added JUnit tests for SimpleDrink, Liquid & DrinkQueue class
