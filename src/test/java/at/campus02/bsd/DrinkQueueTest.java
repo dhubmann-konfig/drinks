@@ -8,6 +8,7 @@
 package at.campus02.bsd;
 
 import org.junit.jupiter.api.*;
+import java.util.NoSuchElementException;
 
 public class DrinkQueueTest {
 
@@ -46,14 +47,45 @@ public class DrinkQueueTest {
 
 	@Test
 	public void pollTest_EmptyQueue() {
-		DrinkQueue dq = new DrinkQueue(1);
-		Drink result = dq.poll();
+		SimpleDrink simpleDrink = null;
+		drinkQueue.offer(simpleDrink);
+		Drink result = drinkQueue.poll();
 		Assertions.assertNull(result);
+	}
+
+	@Test
+	public void elementTest_HasDrink() {
+		Liquid liquid = new Liquid("Gin", 0.06, 37.5);
+		SimpleDrink simpleDrink = new SimpleDrink("Martini", liquid);
+		drinkQueue.offer(simpleDrink);
+		Drink result = drinkQueue.element();
+		Assertions.assertEquals(simpleDrink, result);
+	}
+
+	@Test
+	public void elementTest_EmptyQueue() {
+		Assertions.assertThrows(NoSuchElementException.class, () -> {
+			SimpleDrink simpleDrink = null;
+			drinkQueue.offer(simpleDrink);
+			drinkQueue.element();
+		});
 	}
 	
 	@Test
-	public void elementTest() {
-		
+	public void removeTest_HasDrink() {
+		Liquid liquid = new Liquid("Gin", 0.06, 37.5);
+		SimpleDrink simpleDrink = new SimpleDrink("Martini", liquid);
+		drinkQueue.offer(simpleDrink);
+		Drink result = drinkQueue.remove();
+		Assertions.assertEquals(simpleDrink, result);
 	}
-
+	
+	@Test
+	public void removeTest_EmptyQueue() {
+		Assertions.assertThrows(NoSuchElementException.class, () -> {
+			SimpleDrink simpleDrink = null;
+			drinkQueue.offer(simpleDrink);
+			drinkQueue.remove();
+		});
+	}
 }
