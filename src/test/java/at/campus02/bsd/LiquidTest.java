@@ -1,6 +1,6 @@
 /*
- * SimpleDrinkTest
- * Represents JUnit Test for Simple Drink
+ * LiquidTest
+ * Represents JUnit Test for Liquid
  * Author: Daniel Hubmann, Caroline Meixner
  * Last Change: 30.06.2023
  */
