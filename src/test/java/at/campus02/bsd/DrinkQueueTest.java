@@ -15,17 +15,45 @@ public class DrinkQueueTest {
 
 	@BeforeEach
 	public void setUp() {
-		drinkQueue = new DrinkQueue(5);
+		drinkQueue = new DrinkQueue(1);
 	}
 
 	@Test
-	public void offerTest_MaxSize() {
-
+	public void offerTest_HasSpace() {
+		Liquid liquid = new Liquid("Gin", 0.06, 37.5);
+		SimpleDrink simpleDrink = new SimpleDrink("Martini", liquid);
+		boolean result = drinkQueue.offer(simpleDrink);
+		Assertions.assertTrue(result);
 	}
 
 	@Test
-	public void offerTest_LessThanMaxSize() {
+	public void offerTest_IsFull() {
+		Liquid liquid = new Liquid("Gin", 0.06, 37.5);
+		SimpleDrink simpleDrink = new SimpleDrink("Martini", liquid);
+		drinkQueue.offer(simpleDrink);
+		boolean result = drinkQueue.offer(simpleDrink);
+		Assertions.assertFalse(result);
+	}
 
+	@Test
+	public void pollTest_HasDrink() {
+		Liquid liquid = new Liquid("Gin", 0.06, 37.5);
+		SimpleDrink simpleDrink = new SimpleDrink("Martini", liquid);
+		drinkQueue.offer(simpleDrink);
+		Drink result = drinkQueue.poll();
+		Assertions.assertEquals(simpleDrink, result);
+	}
+
+	@Test
+	public void pollTest_EmptyQueue() {
+		DrinkQueue dq = new DrinkQueue(1);
+		Drink result = dq.poll();
+		Assertions.assertNull(result);
+	}
+	
+	@Test
+	public void elementTest() {
+		
 	}
 
 }
