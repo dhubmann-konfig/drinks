@@ -51,7 +51,7 @@ public class Cocktail extends Drink{
         for (Liquid liquid : liquidList) {
             alcoholVolume += (liquid.getAlcoholPercent() / 100) * liquid.getVolume();
         }
-        alcoholPercent = alcoholVolume / getVolume();
+        alcoholPercent = (alcoholVolume / getVolume()) * 100;
         return alcoholPercent;
     }
 
