@@ -88,10 +88,14 @@ public class DrinkQueue {
 	 * @return first element in queue, null if empty
 	 */
 	public Drink peek() {
+		Drink drink;
 		if (drinks.get(0) != null) {
-			return drinks.get(0);
+			drink = drinks.get(0);
+			return drink;
+		} else {
+			drink = null;
+			return drink;
 		}
-		return null;
 	}
 
 	/**
