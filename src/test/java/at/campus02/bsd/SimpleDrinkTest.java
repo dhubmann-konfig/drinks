@@ -2,7 +2,7 @@
  * SimpleDrinkTest
  * Represents JUnit Test for Simple Drink
  * Author: Daniel Hubmann, Caroline Meixner
- * Last Change: 30.06.2023
+ * Last Change: 01.07.2023
  */
 
 package at.campus02.bsd;
