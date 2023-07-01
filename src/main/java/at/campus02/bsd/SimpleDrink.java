@@ -2,13 +2,19 @@
  * SimpleDrink
  * Represents Simple Drink
  * Author: Daniel Hubmann, Caroline Meixner
- * Last Change: 22.06.2023
+ * Last Change: 01.07.2023
  */
 
 package at.campus02.bsd;
 
 /**
- * Class represents a simple drink liquid which can be used in drinks
+ * Represents a simple drink containing one liquid.
+ *
+ * A class to create simple drinks with a liquid, volume and alcohol percentage,
+ * which can be used in drinks.
+ *
+ * @author Caroline Meixner
+ *
  */
 public class SimpleDrink extends Drink {
 	/**
@@ -17,7 +23,7 @@ public class SimpleDrink extends Drink {
 	protected Liquid l;
 
 	/**
-	 * Creates a SimpleDrink object with given age and liquid
+	 * Creates a SimpleDrink object with given name and liquid
 	 *
 	 * @param name name of drink
 	 * @param l    only liquid in drink
