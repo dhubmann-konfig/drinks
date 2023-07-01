@@ -24,5 +24,5 @@ As the project is being developed as part of the course "Configuration Managemen
 - [x] Create and implement Cocktail class
 - [x] Create and implement DrinkQueue class
 - [x] Write JavaDocs for each class (class, attributes, methods)
-- [ ] Write Tests for each class
+- [x] Write Tests for each class
 - [ ] Create maven site documentation
