@@ -51,5 +51,13 @@ public class SimpleDrinkTest {
 		boolean result = simpleDrink.isAlcoholic();
 		Assertions.assertFalse(result);
 	}
+	
+	@Test
+	public void getNameTest() {
+		String expectedResult = "Martini";
+		simpleDrink.setName(expectedResult);
+		String result = simpleDrink.getName();
+		Assertions.assertEquals(expectedResult, result);
+	}
 
 }
