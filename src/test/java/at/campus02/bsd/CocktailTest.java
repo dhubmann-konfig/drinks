@@ -50,6 +50,14 @@ public class CocktailTest {
             boolean isAlcoholic = cocktail.isAlcoholic();
             Assertions.assertTrue(isAlcoholic);
         }
+        
+        @Test
+    	public void getNameTest() {
+    		String expectedResult = "Gin Tonic";
+    		cocktail.setName(expectedResult);
+    		String result = cocktail.getName();
+    		Assertions.assertEquals(expectedResult, result);
+    	}
     }
 
     @Test
@@ -66,5 +74,7 @@ public class CocktailTest {
         boolean isAlcoholic = cocktail.isAlcoholic();
         Assertions.assertFalse(isAlcoholic);
     }
+    
+    
 
 }
