@@ -43,7 +43,7 @@ public class DrinkQueue {
 	/**
 	 * Adds the specified Drink to the end of the queue, if the queue is not full.
 	 * 
-	 * @author
+	 * @author Daniel Hubmann
 	 * @param drink The Drink object to be added
 	 * @return true if Drink was added successfully, false otherwise
 	 */
