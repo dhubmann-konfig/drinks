@@ -1,3 +1,10 @@
+/*
+ * CocktailTest
+ * Represents JUnit Test for Cocktail
+ * Author: Daniel Hubmann, Caroline Meixner
+ * Last Change: 01.07.2023
+ */
+
 package at.campus02.bsd;
 
 import org.junit.jupiter.api.Assertions;

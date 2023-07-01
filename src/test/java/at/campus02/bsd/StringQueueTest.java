@@ -1,3 +1,10 @@
+/*
+ * StringQueueTest
+ * Represents JUnit Test for String Queue
+ * Author: Daniel Hubmann, Caroline Meixner
+ * Last Change: 01.07.2023
+ */
+
 package at.campus02.bsd;
 
 import org.apache.logging.log4j.core.util.Assert;
