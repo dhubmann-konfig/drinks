@@ -21,7 +21,7 @@ public interface IQueue {
 	 * Adds object to queue and returns true if successful
 	 * 
 	 * @author Daniel Hubmann
-	 * @param String object to add
+	 * @param obj String object to add
 	 * @return true if successful, false otherwise
 	 */
 	public abstract boolean offer(String obj);

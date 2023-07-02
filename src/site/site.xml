@@ -1,0 +1,7 @@
+<project name="Drinks Documentation">
+    <publishDate position="right"/>
+    <version position="left"/>
+    <body>
+        <menu ref="reports"/>
+    </body>
+</project>
