@@ -2,9 +2,6 @@
     <publishDate position="right"/>
     <version position="left"/>
     <body>
-        <menu name="Overview">
-            <item name="Good Style" href="good_style.html"/>
-        </menu>
         <menu ref="reports"/>
     </body>
 </project>
