@@ -2,13 +2,21 @@
  * Cocktail
  * Represents Cocktail
  * Author: Daniel Hubmann, Caroline Meixner
- * Last Change: 27.06.2023
+ * Last Change: 02.07.2023
  */
 
 package at.campus02.bsd;
 
 import java.util.List;
 
+/**
+ * Represents a cocktail containing liquids.
+ *
+ * Contains methods to calculate volume, alc/vol and if a drink
+ * is alcoholic.
+ *
+ * @author Caroline Meixner
+ */
 public class Cocktail extends Drink{
     /**
      * list of contained liquids
