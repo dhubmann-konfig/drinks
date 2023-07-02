@@ -46,10 +46,9 @@ public class StringQueueTest {
 
     @Test
     public void pollTest_Empty() {
-        string = null;
-        stringQueue.offer(string);
-        String result = stringQueue.poll();
-        Assertions.assertNull(result);
+        Assertions.assertThrows(IndexOutOfBoundsException.class, () -> {
+            stringQueue.poll();
+        });
     }
 
     @Test
@@ -77,8 +76,6 @@ public class StringQueueTest {
 
     @Test
     public void peekTest_Empty() {
-        string = null;
-        stringQueue.offer(string);
         String result = stringQueue.peek();
         Assertions.assertNull(result);
     }
