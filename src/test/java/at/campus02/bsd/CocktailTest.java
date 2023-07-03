@@ -81,7 +81,7 @@ public class CocktailTest {
         }
 
         /**
-         * Tests return value of getName() method
+         * Tests setter and return value of getName() method
          */
         @Test
     	public void getNameTest() {
