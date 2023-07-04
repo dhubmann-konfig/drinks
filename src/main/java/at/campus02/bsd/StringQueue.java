@@ -115,7 +115,7 @@ public class StringQueue implements IQueue {
 	 * 
 	 * @author Daniel Hubmann
 	 * @return The first element in the queue
-	 * @throws NoSuchElementExcpetion if the queue is empty
+	 * @throws NoSuchElementException if the queue is empty
 	 */
 	@Override
 	public String element() {
