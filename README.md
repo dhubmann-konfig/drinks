@@ -25,4 +25,4 @@ As the project is being developed as part of the course "Configuration Managemen
 - [x] Create and implement DrinkQueue class
 - [x] Write JavaDocs for each class (class, attributes, methods)
 - [x] Write Tests for each class
-- [ ] Create maven site documentation
+- [x] Create maven site documentation
