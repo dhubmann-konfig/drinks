@@ -7,8 +7,6 @@
 - Added configuration properties for testing and documentation to pom.xml
 - Added header information & correct package name
 - Fixed bugs in StringQueue.java
-- Added javadoc to IQueue & StringQueue class
 - Added implementation of offer(), poll() & remove() methods in DrinkQueue class
-- Added JUnit tests for SimpleDrink, Liquid & DrinkQueue class
-- Added javadoc to Liquid class
-- Added JUnit test in Cocktail class
+- Added javadoc to IQueue, StringQueue & Liquid class
+- Added JUnit tests for SimpleDrink, Liquid, DrinkQueue & Cocktail class
