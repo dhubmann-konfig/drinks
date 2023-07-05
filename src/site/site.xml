@@ -1,7 +1,11 @@
 <project name="Drinks Documentation">
-    <publishDate position="right"/>
-    <version position="left"/>
-    <body>
-        <menu ref="reports"/>
-    </body>
+<publishDate position="right"/>
+<version position="left"/>
+<body>
+<menu name="Overview">
+<item name="member1" href="member1.html"/>
+<item name="member2" href="member2.html"/>
+</menu>
+<menu ref="reports"/>
+</body>
 </project>
