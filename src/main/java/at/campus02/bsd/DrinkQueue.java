@@ -63,6 +63,11 @@ public class DrinkQueue {
 	 */
 	public Drink poll() {
 		Drink drink = peek();
+		
+		if(drinks.size() > 0) {
+			drinks.remove(0);
+		}
+		
 		return drink;
 	}
 
